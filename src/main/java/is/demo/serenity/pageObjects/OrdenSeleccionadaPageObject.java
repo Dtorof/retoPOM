@@ -15,6 +15,9 @@ public class OrdenSeleccionadaPageObject extends PageObject {
     @FindBy(how = How.XPATH, using  = "//ul[@id='select2-results-9']/li")
     public List<WebElementFacade> listaEmpleados;
 
+    @FindBy(how = How.XPATH, using  = "//*[@id='s2id_Serenity_Demo_Northwind_OrderDialog15_EmployeeID']//span[@class='select2-chosen']")
+    public WebElementFacade  empleadoSeleccionado;
+
     @FindBy(how = How.XPATH, using  = "//div[@data-action='save-and-close']")
     public WebElementFacade botonGuardar;
 }

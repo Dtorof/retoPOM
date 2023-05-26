@@ -4,13 +4,9 @@ import  is.demo.serenity.pageObjects.PaginaInicioPageObjects;
 import  is.demo.serenity.utils.Excel;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
-import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 public class PaginaInicioSteps {
@@ -48,7 +44,7 @@ public class PaginaInicioSteps {
     }
 
     @Step("Hacer clic en ingresar  ")
-    public void clicIngresar(){
+    public void ingresarCredenciales(){
         paginaInicio.btnIngresar.click();
     }
 

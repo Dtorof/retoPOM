@@ -1,7 +1,5 @@
 package is.demo.serenity.steps;
 
-
-
 import is.demo.serenity.pageObjects.OrdenesPageObject;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;

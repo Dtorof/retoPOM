@@ -1,11 +1,10 @@
 #language:es
 
-Característica: Inicio de sesion
-  Yo como usuario quiero validar un
-  inicio de sesion exitoso
+Característica:  Inicio de sesion
+  Como usuario quiero poder iniciar sesión correctamente para acceder a mi dashboard
 
   @Logeo
-  Escenario: Inicio de sesion exitoso
-    Dado que el usuario abre el navegador en la url
+  Escenario: Inicio de sesion exitoso con credenciales validas
+    Dado que el usuario ha abierto el navegador en la página de inicio de sesion
     Cuando el usuario  limpia los campos y ingresa las credenciales
-    Entonces el usuario puede visualizar el dashboard
+    Entonces el usuario es redirigido al dashboard

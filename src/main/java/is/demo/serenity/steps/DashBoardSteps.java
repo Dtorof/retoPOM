@@ -4,7 +4,6 @@ import  is.demo.serenity.pageObjects.DashBoardPageObject;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
 import org.junit.Assert;
-
 import org.hamcrest.Matchers;
 
 

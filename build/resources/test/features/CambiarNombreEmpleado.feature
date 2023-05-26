@@ -3,14 +3,16 @@
 Característica: Actualizar nombre de empleado
   Como usuario quiero iniciar sesión exitosamente y cambiar el nombre del empleado en una orden de compra
   Antecedentes:
-    Dado que el usuario abre el navegador en la url
-    Cuando El usuario limpie los campos e ingrese las credenciales
+    Dado que el usuario ha abierto el navegador en la página de inicio de sesion
+    Y El usuario ingresa las credenciales validas
+    Y el usuario está en el dashboard
 
   @ActualizarNombre
-  Escenario: Cambio de nombre de empleado en una orden de compra
-    Y el usuario hace clic en Open Orders
-    Cuando el usuario hace clic en una orden de compra
+  Escenario: Cambio de nombre de empleado en una orden de compra existente
+    Dado que  el usuario hace clic en Open Orders
+    Cuando el usuario selecciona una orden de compra existente
     Y el usuario hace clic en el selector de empleado
-    Y selecciona un empleado de forma aleatoria
+    Y el usuario selecciona un empleado de la lista
+    Y el usuario confirma que el nombre seleccionado es el deseado
     Y el usuario hace clic en Save
-    Entonces el nombre del empleado en la orden de compra se actualiza
+    Entonces el nombre del empleado en la orden de compra se actualiza correctamente
